@@ -1,0 +1,31 @@
+OrderID,Date,Product,Category,Quantity,Price,City,Customer
+2001,2026-01-05,Smartphone,Electronics,1,25000,Surat,Aarav
+2002,2026-01-12,Tablet,Electronics,2,18000,Ahmedabad,Diya
+2003,2026-02-03,Smartwatch,Electronics,3,6000,Vadodara,Kabir
+2004,2026-02-15,Bluetooth Speaker,Electronics,4,3500,Rajkot,Ishita
+2005,2026-03-01,Office Chair,Furniture,5,8500,Mumbai,Yash
+2006,2026-03-20,Study Table,Furniture,1,12000,Surat,Riya
+2007,2026-04-10,Water Bottle,Accessories,2,500,Ahmedabad,Kunal
+2008,2026-05-05,Backpack,Accessories,3,1800,Vadodara,Mira
+2009,2026-06-18,Air Purifier,Home Appliance,4,11000,Rajkot,Dev
+2010,2026-07-22,Coffee Maker,Home Appliance,5,4500,Mumbai,Anaya
+2011,2026-08-11,Smartphone,Electronics,1,25000,Surat,Aarav
+2012,2026-09-09,Tablet,Electronics,2,18000,Ahmedabad,Diya
+2013,2026-10-14,Smartwatch,Electronics,3,6000,Vadodara,Kabir
+2014,2026-11-19,Bluetooth Speaker,Electronics,4,3500,Rajkot,Ishita
+2015,2026-12-08,Office Chair,Furniture,5,8500,Mumbai,Yash
+2016,2026-01-05,Study Table,Furniture,1,12000,Surat,Riya
+2017,2026-01-12,Water Bottle,Accessories,2,500,Ahmedabad,Kunal
+2018,2026-02-03,Backpack,Accessories,3,1800,Vadodara,Mira
+2019,2026-02-15,Air Purifier,Home Appliance,4,11000,Rajkot,Dev
+2020,2026-03-01,Coffee Maker,Home Appliance,5,4500,Mumbai,Anaya
+2021,2026-03-20,Smartphone,Electronics,1,25000,Surat,Aarav
+2022,2026-04-10,Tablet,Electronics,2,18000,Ahmedabad,Diya
+2023,2026-05-05,Smartwatch,Electronics,3,6000,Vadodara,Kabir
+2024,2026-06-18,Bluetooth Speaker,Electronics,4,3500,Rajkot,Ishita
+2025,2026-07-22,Office Chair,Furniture,5,8500,Mumbai,Yash
+2026,2026-08-11,Study Table,Furniture,1,12000,Surat,Riya
+2027,2026-09-09,Water Bottle,Accessories,2,500,Ahmedabad,Kunal
+2028,2026-10-14,Backpack,Accessories,3,1800,Vadodara,Mira
+2029,2026-11-19,Air Purifier,Home Appliance,4,11000,Rajkot,Dev
+2030,2026-12-08,Coffee Maker,Home Appliance,5,4500,Mumbai,Anaya
