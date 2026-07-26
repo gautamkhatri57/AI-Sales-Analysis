@@ -1,25 +1,48 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import openpyxl as xl
 
 st.set_page_config(page_title="Sales Data Analysis Dashboard", layout="wide")
 
 st.title("📊 Sales Data Analysis Dashboard")
 
 
-uploaded_file = st.file_uploader("Upload Sales CSV File", type=["csv"])
+uploaded_file = st.file_uploader(
+    "Upload Sales File",
+    type=["csv", "xlsx"]
+)
 
 if uploaded_file is not None:
 
-
-    df = pd.read_csv(uploaded_file)
+    if uploaded_file.name.endswith(".csv"):
+        df = pd.read_csv(uploaded_file)
+    else:
+        df = pd.read_excel(uploaded_file)
 
 
     df["Revenue"] = df["Quantity"] * df["Price"]
 
 
     df["Date"] = pd.to_datetime(df["Date"])
+    st.sidebar.header("🔍 Filter Data")
+
+    selected_city = st.sidebar.multiselect(
+        "Select City",
+        df["City"].unique(),
+        default=df["City"].unique()
+    )
+
+    selected_product = st.sidebar.multiselect(
+        "Select Product",
+        df["Product"].unique(),
+        default=df["Product"].unique()
+    )
+
+    df = df[
+        (df["City"].isin(selected_city)) &
+        (df["Product"].isin(selected_product))
+        ]
 
 
     st.subheader("Dataset Preview")
@@ -99,4 +122,4 @@ if uploaded_file is not None:
         st.dataframe(df)
 
 else:
-    st.info("Please upload a Sales CSV file.")
+    st.info("Please upload a Sales CSV file OR excel file.")
