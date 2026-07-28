@@ -122,4 +122,4 @@ if uploaded_file is not None:
         st.dataframe(df)
 
 else:
-    st.info("Please upload a Sales CSV file OR excel file.")
+    st.info("Please upload a Sales file .")
